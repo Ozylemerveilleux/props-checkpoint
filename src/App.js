@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import React from 'react';
+import Profil from './Profil/Profil';
+import HandleName from './Profil/HandleName';
 import './App.css';
+import image from './Pp.jpg'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <Profil fullName = "Name:I am mister Ismaila Holdi COLY" />
+      </div>
+      <div> <Profil profession = "Profession: I am master financial ingineering"/> </div>
+      <div> <Profil bio = " Bio: After my Licence I got my master's degree in audit and management control"/> </div>
+      <div> <Profil> <img src= {image} alt='Pp'/> </Profil> </div>
     </div>
   );
 }
